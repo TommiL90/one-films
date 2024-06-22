@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import { Hero } from '@/components/hero'
 import { Icon } from '@/components/icons'
+import { InfiniteMovingCardsComponent } from '@/components/infinite-moving-cards.component'
 import { Services } from '@/components/services'
 import { Testimonials } from '@/components/testimonials'
 import { Button } from '@/components/ui/button'
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <InfiniteMovingCardsComponent />
       <Services />
       <Services />
       <Testimonials />
