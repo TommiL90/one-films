@@ -27,10 +27,10 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <Providers attribute="class" defaultTheme="system" enableSystem>
+        <Providers attribute="class" defaultTheme="dark">
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader />
-            <div className="flex-1">{children}</div>
+            <main className="flex-1">{children}</main>
           </div>
           <TailwindIndicator />
         </Providers>

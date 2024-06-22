@@ -8,7 +8,7 @@ import { siteConfig } from '@/config/site'
 
 import { GithubIcon } from '../icons'
 import { Navbar } from '../navbar'
-import { subtitle, title } from '../primitives'
+import { subtitle, title } from '../../../config/primitives'
 
 const IndexPage = () => {
   return (

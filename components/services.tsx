@@ -10,10 +10,10 @@ export const Services = () => {
             <div className="inline-block rounded-lg bg-[#D0D0D0] px-3 py-1 text-sm">
               Our Services
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter text-[#2F4F4F] sm:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
               Elevate Your Brand with Our Expertise
             </h2>
-            <p className="max-w-[900px] text-[#708090] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[900px] text-slate-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               From captivating video production to engaging social media
               campaigns, our team of experts will help you create a powerful
               online presence and connect with your target audience in Ubatuba.

@@ -10,7 +10,7 @@ export const Hero = () => {
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
               Eleve sua Marca com a Agência Audiovisual One Films
             </h1>
-            <p className="text-muted-foreground max-w-[600px] md:text-xl">
+            <p className="max-w-[600px] text-muted-foreground md:text-xl">
               Desbloqueie o poder da criação de conteúdo e do marketing digital
               para fazer seu negócio crescer em Ubatuba e região.
             </p>
