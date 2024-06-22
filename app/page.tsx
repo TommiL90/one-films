@@ -2,7 +2,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { ContactUs } from '@/components/contact-us'
 import { Hero } from '@/components/hero'
+import { ImagesSliderDemo } from '@/components/hero2'
 import { Icon } from '@/components/icons'
 import { InfiniteMovingCardsComponent } from '@/components/infinite-moving-cards.component'
 import { Services } from '@/components/services'
@@ -14,8 +16,13 @@ import { Textarea } from '@/components/ui/textarea'
 export default function Home() {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
+      <ImagesSliderDemo />
       <InfiniteMovingCardsComponent />
+      <figure>
+        <Image src="/gif.gif" width="300" height="200" alt="gif" />
+        <figcaption className="sr-only">Titulo del gif</figcaption>
+      </figure>
       <Services />
       <Services />
       <Testimonials />
@@ -193,6 +200,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <ContactUs />
       <footer className="flex w-full shrink-0 flex-col items-center gap-2 border-t px-4 py-6 sm:flex-row md:px-6">
         <p className="text-xs text-muted-foreground">
           &copy; 2024 Ubatuba Marketing Agency. All rights reserved.
