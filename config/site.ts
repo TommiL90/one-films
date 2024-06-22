@@ -1,6 +1,12 @@
 export const siteConfig = {
   name: 'Next.js + NextUI',
   description: 'Make beautiful websites regardless of your design experience.',
+  mainNav: [
+    {
+      title: 'Home',
+      href: '/',
+    },
+  ],
   navItems: [
     {
       label: 'Home',
