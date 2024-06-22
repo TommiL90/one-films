@@ -1,9 +1,20 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 
+import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 import { cn } from '@/lib/utils'
+
+import { AspectRatio } from './aspect-ratio'
 
 export const InfiniteMovingCards = ({
   items,
@@ -90,32 +101,43 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="relative w-[350px] max-w-full flex-shrink-0 rounded-2xl border border-b-0 border-slate-700 px-8 py-6 md:w-[450px]"
-            style={{
-              background:
-                'linear-gradient(180deg, var(--slate-800), var(--slate-900)',
-            }}
+            className="relative w-[350px] max-w-full flex-shrink-0 rounded-2xl border border-b-0 border-slate-700 md:w-[350px]"
+            // style={{
+            //   background:
+            //     'linear-gradient(180deg, var(--slate-800), var(--slate-900)',
+            // }}
             key={item.name}
           >
-            <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <span className="relative z-20 text-sm font-normal leading-[1.6] text-gray-100">
+            <figure>
+              <AspectRatio
+                ratio={60 / 37}
+                className="min-w-full rounded-t-2xl bg-muted"
+              >
+                <Image
+                  src="/gif.gif"
+                  alt="Photo by Drew Beamer"
+                  fill
+                  // width="480"
+                  // height="296"
+                  decoding="async"
+                  className="rounded-t-2xl object-cover"
+                />
+              </AspectRatio>
+              <figcaption className="sr-only">Titulo del gif</figcaption>
+            </figure>
+            <div
+              aria-hidden="true"
+              className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+            ></div>
+            <CardHeader className="px-4">
+              <CardTitle className="text-lg font-semibold">
+                {' '}
+                {item.title}
+              </CardTitle>
+              <CardDescription className="z-20 text-sm font-normal leading-[1.6]">
                 {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className="text-sm font-normal leading-[1.6] text-gray-400">
-                    {item.name}
-                  </span>
-                  <span className="text-sm font-normal leading-[1.6] text-gray-400">
-                    {item.title}
-                  </span>
-                </span>
-              </div>
-            </blockquote>
+              </CardDescription>
+            </CardHeader>
           </li>
         ))}
       </ul>

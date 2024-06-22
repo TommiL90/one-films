@@ -2,8 +2,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import AboutUs from '@/components/about-us'
 import { ContactUs } from '@/components/contact-us'
-import { Hero } from '@/components/hero'
 import { ImagesSliderDemo } from '@/components/hero2'
 import { Icon } from '@/components/icons'
 import { InfiniteMovingCardsComponent } from '@/components/infinite-moving-cards.component'
@@ -19,10 +19,7 @@ export default function Home() {
       {/* <Hero /> */}
       <ImagesSliderDemo />
       <InfiniteMovingCardsComponent />
-      <figure>
-        <Image src="/gif.gif" width="300" height="200" alt="gif" />
-        <figcaption className="sr-only">Titulo del gif</figcaption>
-      </figure>
+      <AboutUs />
       <Services />
       <Services />
       <Testimonials />
