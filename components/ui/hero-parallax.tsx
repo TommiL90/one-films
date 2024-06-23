@@ -11,11 +11,7 @@ import React from 'react'
 
 interface HeroParallaxProps {
   children: React.ReactNode
-  image: {
-    title: string
-    link: string
-    thumbnail: string
-  }
+  image: string
 }
 
 export const HeroParallax = ({ image, children }: HeroParallaxProps) => {
@@ -63,7 +59,7 @@ export const HeroParallax = ({ image, children }: HeroParallaxProps) => {
         className=""
       >
         <motion.div className="flex flex-row-reverse space-x-20 space-x-reverse">
-          <ImageCard image={image.thumbnail} translate={translateXReverse} />
+          <ImageCard image={image} translate={translateXReverse} />
         </motion.div>
       </motion.div>
     </div>
@@ -89,11 +85,15 @@ export const ImageCard = ({
       className="group/product relative h-[50rem] w-[50rem] flex-shrink-0"
     >
       <Image
-        src={image}
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        src={require('../../public/somos.webp').default.src}
         height="800"
         width="800"
         className="absolute inset-0 h-full w-full object-cover object-left-top"
         alt={image}
+        fetchPriority="low"
+        decoding="async"
+        data-nimg="1"
       />
     </motion.div>
   )

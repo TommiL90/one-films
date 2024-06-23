@@ -83,12 +83,88 @@ const config = {
             transform: 'translate(calc(-50% - 0.5rem))',
           },
         },
+        fade: {
+          from: {
+            opacity: '0',
+            transform: 'translateX(-80px)',
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateX(0px)',
+          },
+        },
+        fadeInDown: {
+          from: {
+            opacity: '0',
+            transform: 'translateY(-80px)',
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateY(0px)',
+          },
+        },
+        mobileActive: {
+          from: {
+            opacity: '0',
+            transform: 'translateY(50px)',
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateY(0px)',
+          },
+        },
+        mobileInactive: {
+          from: {
+            opacity: '1',
+            transform: 'translateY(0px)',
+          },
+          to: {
+            opacity: '0',
+            transform: 'translateY(50px)',
+          },
+        },
+        blink: {
+          '50%': {
+            opacity: '0',
+          },
+        },
+        fly: {
+          from: {
+            position: 'relative',
+            top: '0px',
+          },
+          to: {
+            position: 'relative',
+            top: '-20px',
+            bottom: '60px',
+          },
+        },
+        load: {
+          '50%': {
+            width: '100%',
+          },
+          '100%': {
+            width: '0',
+            right: '0',
+            left: 'unset',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         scroll:
           'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+        mobileActive: 'mobileActive .5s ease-in',
+        mobileInactive: 'mobileInactive .5s ease-in',
+        blink: 'blink 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        fly: 'fly 2s alternate infinite',
+        load: 'load .5s ease-in-out infinite',
+        fade: 'fade 1s forwards',
+        fadeInDown: 'fadeInDown 0.6s forwards',
+      },
+      boxShadow: {
+        input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
       },
     },
   },

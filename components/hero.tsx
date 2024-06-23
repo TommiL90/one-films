@@ -1,29 +1,29 @@
-import Image from 'next/image'
 import React from 'react'
 
-export const Hero = () => {
+import { ImagesSlider } from './ui/images-slider'
+
+export function Hero() {
+  const images = [
+    'https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  ]
   return (
-    <section className="h-screen w-full bg-background py-12 sm:py-24 lg:py-32">
-      <div className="container mx-auto grid gap-8 px-4 md:px-0 lg:grid-cols-2 lg:gap-12">
-        <div className="flex flex-col justify-center space-y-4">
-          <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-              Eleve sua Marca com a Agência Audiovisual One Films
-            </h1>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl">
-              Desbloqueie o poder da criação de conteúdo e do marketing digital
-              para fazer seu negócio crescer em Ubatuba e região.
-            </p>
-          </div>
-        </div>
-        <Image
-          src="/placeholder.svg"
-          width="550"
-          height="550"
-          alt="Ubatuba Marketing Agency"
-          className="mx-auto aspect-square overflow-hidden rounded-xl object-contain sm:w-full"
-        />
+    <ImagesSlider className="h-screen" images={images}>
+      <div className="z-50 flex h-screen flex-col items-center justify-center transition-all">
+        <h1 className="animate-fadeInDown bg-gradient-to-b from-primary to-zinc-500 bg-clip-text py-4 text-center text-xl font-bold text-transparent md:text-6xl">
+          Eleve sua Marca com a Agência Audiovisual
+          <br /> One Films
+        </h1>
+        <p className="animate-fade max-w-[600px] text-muted-foreground md:text-xl">
+          Desbloqueie o poder da criação de conteúdo e do marketing digital para
+          fazer seu negócio crescer em Ubatuba e região.
+        </p>
+        <button className="animate-mobileActive relative mx-auto mt-4 rounded-full border border-emerald-500/20 bg-emerald-300/10 px-4 py-2 text-center text-white backdrop-blur-sm hover:bg-emerald-300/20">
+          <span>Contate-nos →</span>
+          <div className="absolute inset-x-0 -bottom-px mx-auto h-px w-3/4 bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
+        </button>
       </div>
-    </section>
+    </ImagesSlider>
   )
 }
