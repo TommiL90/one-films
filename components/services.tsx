@@ -63,10 +63,10 @@ export const Services = () => {
             <ul className="grid gap-6">
               <li>
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold text-[#2F4F4F]">
+                  <h3 className="text-xl font-bold text-emerald-600">
                     Video Production
                   </h3>
-                  <p className="text-[#708090]">
+                  <p className="text-accent-foreground">
                     Captivate your audience with our cinematic video production
                     services.
                   </p>
@@ -74,10 +74,10 @@ export const Services = () => {
               </li>
               <li>
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold text-[#2F4F4F]">
+                  <h3 className="text-xl font-bold text-emerald-600">
                     Social Media Campaigns
                   </h3>
-                  <p className="text-[#708090]">
+                  <p className="text-accent-foreground">
                     Engage your customers with our tailored social media
                     campaigns.
                   </p>
@@ -85,10 +85,10 @@ export const Services = () => {
               </li>
               <li>
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold text-[#2F4F4F]">
+                  <h3 className="text-xl font-bold text-emerald-600">
                     Website Design
                   </h3>
-                  <p className="text-[#708090]">
+                  <p className="text-accent-foreground">
                     Showcase your brand with a visually stunning and
                     user-friendly website.
                   </p>
