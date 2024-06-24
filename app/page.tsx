@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+
 import Image from 'next/image'
 
 import AboutUs from '@/components/about-us'
+import { ChatBot } from '@/components/chatbot'
 import { ContactUs } from '@/components/contact-us'
 import { Hero } from '@/components/hero'
 import { Icon } from '@/components/icons'
@@ -107,6 +109,7 @@ export default function Home() {
         </div>
       </section>
       <ContactUs />
+      <ChatBot />
     </>
   )
 }
