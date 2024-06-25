@@ -1,14 +1,14 @@
 import React from 'react'
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel'
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+//   CarouselNext,
+//   CarouselPrevious,
+// } from '@/components/ui/carousel'
 
-import { LazyLoadImage } from './ui/lazy-load-image'
+// import { LazyLoadImage } from './ui/lazy-load-image'
 
 export const OtherServices = () => {
   return (
@@ -38,7 +38,7 @@ export const OtherServices = () => {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-          <Carousel
+          {/* <Carousel
             className="w-full max-w-[550px] sm:w-full lg:order-last"
             opts={{
               loop: true,
@@ -64,7 +64,7 @@ export const OtherServices = () => {
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
-          </Carousel>
+          </Carousel> */}
           <div className="flex flex-col justify-center space-y-4">
             <ul className="grid gap-6">
               <li>
