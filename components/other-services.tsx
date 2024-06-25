@@ -1,14 +1,14 @@
 import React from 'react'
 
-import ScrollReveal from './scroll-reveal'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel'
 
-// import {
-//   Carousel,
-//   CarouselContent,
-//   CarouselItem,
-//   CarouselNext,
-//   CarouselPrevious,
-// } from '@/components/ui/carousel'
+import ScrollReveal from './scroll-reveal'
 
 // import { LazyLoadImage } from './ui/lazy-load-image'
 
@@ -41,33 +41,34 @@ export const OtherServices = () => {
             </div>
           </div>
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-            {/* <Carousel
-            className="w-full max-w-[550px] sm:w-full lg:order-last"
-            opts={{
-              loop: true,
-              dragFree: true,
-            }}
-          >
-            <CarouselContent className="">
-              {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index} className="">
-                  <LazyLoadImage
-                    key={index}
-                    index={index}
-                    imgSrc={`/produtora.webp`}
-                    alt="Video Production"
-                    // inView={slidesInView.indexOf(index) > -1}
-                    inView={true}
-                    width={550}
-                    height={310}
-                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel> */}
+            <Carousel
+              className="w-full max-w-[550px] sm:w-full lg:order-last"
+              opts={{
+                loop: true,
+                dragFree: true,
+              }}
+            >
+              <CarouselContent className="">
+                {Array.from({ length: 5 }).map((_, index) => (
+                  <CarouselItem key={index} className="">
+                    {index}
+                    {/* <LazyLoadImage
+                      key={index}
+                      index={index}
+                      imgSrc={`/produtora.webp`}
+                      alt="Video Production"
+                      // inView={slidesInView.indexOf(index) > -1}
+                      inView={true}
+                      width={550}
+                      height={310}
+                      className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
+                    /> */}
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
             <div className="flex flex-col justify-center space-y-4">
               <ul className="grid gap-6">
                 <li>
