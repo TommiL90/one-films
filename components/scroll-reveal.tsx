@@ -19,6 +19,7 @@ export default function ScrollReveal({
   y = y || 0
   const ref = useRef(null)
   const [intersecting, setIntersecting] = useState(false)
+  const [show, setShow] = useState(false)
 
   useEffect(() => {
     let observerRefValue: Element | null = null
@@ -27,6 +28,7 @@ export default function ScrollReveal({
       const intersectionObserver = new IntersectionObserver(
         (entries) => {
           if (entries[0].isIntersecting) {
+            setShow(true)
             setIntersecting(true)
           } else {
             setIntersecting(false)
@@ -58,7 +60,7 @@ export default function ScrollReveal({
       className={`transition ${intersecting ? 'opacity-100' : 'opacity-0'}`}
       ref={ref}
     >
-      {intersecting ? children : null}
+      {show ? children : null}
     </div>
   )
 }
