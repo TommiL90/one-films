@@ -3,6 +3,7 @@
 import AboutUs from '@/components/about-us'
 import { Hero } from '@/components/hero'
 import { InfiniteMovingCardsComponent } from '@/components/infinite-moving-cards-component'
+import { OtherServices } from '@/components/other-services'
 
 // import { Icon } from '@/components/icons'
 
@@ -12,10 +13,10 @@ export default function Home() {
       <Hero />
       <InfiniteMovingCardsComponent />
       <AboutUs />
+      <OtherServices />
 
       {/* 
-      <AboutUs />
-      <Services />
+
       <Testimonials />
 
       <section className="w-full py-12 md:py-24 lg:py-32">
