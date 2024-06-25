@@ -1,21 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import Image from 'next/image'
-
-import AboutUs from '@/components/about-us'
-import { ChatBot } from '@/components/chatbot'
-import { ContactUs } from '@/components/contact-us'
 import { Hero } from '@/components/hero'
-import { Icon } from '@/components/icons'
-import { InfiniteMovingCardsComponent } from '@/components/infinite-moving-cards-component'
-import { Services } from '@/components/services'
-import { Testimonials } from '@/components/testimonials'
+
+// import { Icon } from '@/components/icons'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <InfiniteMovingCardsComponent />
+
+      {/* <InfiniteMovingCardsComponent />
       <AboutUs />
       <Services />
       <Testimonials />
@@ -109,66 +103,66 @@ export default function Home() {
         </div>
       </section>
       <ContactUs />
-      <ChatBot />
+      <ChatBot /> */}
     </>
   )
 }
 
-function FacebookIcon(props: Icon) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-    </svg>
-  )
-}
+// function FacebookIcon(props: Icon) {
+//   return (
+//     <svg
+//       {...props}
+//       xmlns="http://www.w3.org/2000/svg"
+//       width="24"
+//       height="24"
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth="2"
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//     >
+//       <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+//     </svg>
+//   )
+// }
 
-function LinkIcon(props: Icon) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-    </svg>
-  )
-}
+// function LinkIcon(props: Icon) {
+//   return (
+//     <svg
+//       {...props}
+//       xmlns="http://www.w3.org/2000/svg"
+//       width="24"
+//       height="24"
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth="2"
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//     >
+//       <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+//       <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+//     </svg>
+//   )
+// }
 
-function VideoIcon(props: Icon) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
-      <rect x="2" y="6" width="14" height="12" rx="2" />
-    </svg>
-  )
-}
+// function VideoIcon(props: Icon) {
+//   return (
+//     <svg
+//       {...props}
+//       xmlns="http://www.w3.org/2000/svg"
+//       width="24"
+//       height="24"
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth="2"
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//     >
+//       <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+//       <rect x="2" y="6" width="14" height="12" rx="2" />
+//     </svg>
+//   )
+// }
