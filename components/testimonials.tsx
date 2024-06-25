@@ -16,11 +16,11 @@ export const Testimonials = () => {
               <div className="absolute inset-x-0 -bottom-px mx-auto h-px w-3/4 bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              What Our Clients Say
+              O Que Nossos Clientes Dizem
             </h2>
             <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Hear from the businesses we've helped grow their brand and reach
-              new customers in Ubatuba.
+              Ouça os depoimentos das empresas que ajudamos a crescer suas
+              marcas e alcançar novos clientes em Ubatuba.
             </p>
           </div>
         </div>
@@ -28,20 +28,20 @@ export const Testimonials = () => {
           <div className="flex flex-col justify-center space-y-4">
             <blockquote className="grid gap-1">
               <div className="text-2xl font-bold text-emerald-600">
-                "Ubatuba Marketing Agency has been a game-changer for our
-                business."
+                "A Agência de Marketing Ubatuba foi um divisor de águas para o
+                nosso negócio."
               </div>
               <footer>
-                <p>- John Doe, Owner of Beachside Cafe</p>
+                <p>- John Doe, Proprietário do Beachside Cafe</p>
               </footer>
             </blockquote>
             <blockquote className="grid gap-1">
               <div className="text-2xl font-bold text-emerald-600">
-                "Ubatuba Marketing Agency has been a game-changer for our
-                business."
+                "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo, reprehenderit quas!."
               </div>
               <footer>
-                <p>- John Doe, Owner of Beachside Cafe</p>
+                <p>- Pirocao, Proprietário do Motel</p>
               </footer>
             </blockquote>
           </div>

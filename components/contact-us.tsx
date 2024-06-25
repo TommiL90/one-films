@@ -19,19 +19,19 @@ export function ContactUs() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="relative space-y-2">
             <h2 className="relative z-20 text-3xl font-bold tracking-tighter text-white sm:text-5xl">
-              Get in Touch
+              Entre em Contato
             </h2>
             <p className="relative z-20 mt-2 max-w-[900px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Ready to take your business to new heights? Contact us today, and
-              lets discuss how we can help you achieve your marketing goals in
-              Ubatuba.
+              Pronto para levar o seu negócio a novos patamares? Entre em
+              contato conosco hoje e vamos discutir como podemos ajudá-lo a
+              alcançar seus objetivos de marketing em Ubatuba.
             </p>
           </div>
           <div className="relative z-30 mx-auto w-full max-w-sm space-y-2">
             <form className="my-8 flex flex-col gap-4" onSubmit={handleSubmit}>
               <Input
                 type="text"
-                placeholder="Name"
+                placeholder="Nome"
                 className="max-w-lg flex-1 bg-foreground"
               />
               <Input
@@ -40,7 +40,7 @@ export function ContactUs() {
                 className="max-w-lg flex-1 bg-foreground"
               />
               <Textarea
-                placeholder="Message"
+                placeholder="Messagem"
                 rows={4}
                 className="max-w-lg flex-1 bg-foreground"
               />

@@ -1,9 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import dynamic from 'next/dynamic'
+
 import AboutUs from '@/components/about-us'
 import { Hero } from '@/components/hero'
 import { InfiniteMovingCardsComponent } from '@/components/infinite-moving-cards-component'
 import { OtherServices } from '@/components/other-services'
+import ScrollReveal from '@/components/scroll-reveal'
+
+const Testimonials = dynamic(() =>
+  import('@/components/testimonials').then((mod) => mod.Testimonials),
+)
+
+const ContactUs = dynamic(() =>
+  import('@/components/contact-us').then((mod) => mod.ContactUs),
+)
 
 // import { Icon } from '@/components/icons'
 
@@ -14,10 +25,16 @@ export default function Home() {
       <InfiniteMovingCardsComponent />
       <AboutUs />
       <OtherServices />
+      <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
+        <Testimonials />
+      </ScrollReveal>
+      <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
+        <ContactUs />
+      </ScrollReveal>
 
       {/* 
 
-      <Testimonials />
+ 
 
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
