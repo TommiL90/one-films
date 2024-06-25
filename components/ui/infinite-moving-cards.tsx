@@ -115,13 +115,12 @@ export const InfiniteMovingCards = ({
                 className="min-w-full rounded-t-2xl bg-muted"
               >
                 <Image
-                  src="/gif.gif"
+                  src={'/placeholder.svg'}
                   alt="Photo by Drew Beamer"
                   fill
-                  // width="480"
-                  // height="296"
                   fetchPriority="low"
-                  placeholder={blurDataURL}
+                  placeholder="blur"
+                  blurDataURL={blurDataURL}
                   decoding="async"
                   className="rounded-t-2xl object-cover"
                 />
