@@ -1,3 +1,5 @@
+'use client'
+import Autoplay from 'embla-carousel-autoplay'
 import React from 'react'
 
 import {
@@ -47,6 +49,14 @@ export const OtherServices = () => {
                 loop: true,
                 dragFree: true,
               }}
+              plugins={[
+                Autoplay({
+                  playOnInit: true,
+                  delay: 2000,
+                  stopOnMouseEnter: true,
+                  stopOnInteraction: false,
+                }),
+              ]}
             >
               <CarouselContent className="">
                 {Array.from({ length: 5 }).map((_, index) => (
@@ -66,8 +76,6 @@ export const OtherServices = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
             </Carousel>
             <div className="flex flex-col justify-center space-y-4">
               <ul className="grid gap-6">
