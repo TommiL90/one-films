@@ -1,6 +1,6 @@
-import { tv } from 'tailwind-variants'
+import { cva } from 'class-variance-authority'
 
-export const title = tv({
+export const title = cva({
   base: 'tracking-tight inline font-semibold',
   variants: {
     color: {
@@ -40,7 +40,7 @@ export const title = tv({
   ],
 })
 
-export const subtitle = tv({
+export const subtitle = cva({
   base: 'w-full md:w-1/2 my-2 text-lg lg:text-xl text-default-600 block max-w-full',
   variants: {
     fullWidth: {

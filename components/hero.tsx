@@ -15,11 +15,11 @@ export function Hero() {
           Eleve sua Marca com a Agência Audiovisual
           <br /> One Films
         </h1>
-        <p className="animate-fade max-w-[600px] text-muted-foreground md:text-xl">
+        <p className="max-w-[600px] animate-fade text-muted-foreground md:text-xl">
           Desbloqueie o poder da criação de conteúdo e do marketing digital para
           fazer seu negócio crescer em Ubatuba e região.
         </p>
-        <button className="animate-mobileActive relative mx-auto mt-4 rounded-full border border-emerald-500/20 bg-emerald-300/10 px-4 py-2 text-center text-white backdrop-blur-sm hover:bg-emerald-300/20">
+        <button className="relative mx-auto mt-4 animate-mobileActive rounded-full border border-emerald-500/20 bg-emerald-300/10 px-4 py-2 text-center text-white backdrop-blur-sm hover:bg-emerald-300/20">
           <span>Contate-nos →</span>
           <div className="absolute inset-x-0 -bottom-px mx-auto h-px w-3/4 bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
         </button>

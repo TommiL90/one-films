@@ -13,7 +13,7 @@ export function Form() {
     console.log('Form submitted')
   }
   return (
-    <div className="z-20 mx-auto w-full max-w-md rounded-none bg-background/30 p-4 shadow-input  md:rounded-2xl md:p-8">
+    <div className="z-20 mx-auto w-full max-w-md rounded-none bg-background/30 p-4 shadow-input md:rounded-2xl md:p-8">
       <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
         Welcome to Aceternity
       </h2>
