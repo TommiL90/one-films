@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic'
 
 import AboutUs from '@/components/about-us'
+import { ChatBot } from '@/components/chatbot'
 import { Hero } from '@/components/hero'
 import { InfiniteMovingCardsComponent } from '@/components/infinite-moving-cards-component'
 import { OtherServices } from '@/components/other-services'
@@ -31,7 +32,7 @@ export default function Home() {
       <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
         <ContactUs />
       </ScrollReveal>
-
+      <ChatBot />
       {/* 
 
  
