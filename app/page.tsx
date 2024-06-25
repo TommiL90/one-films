@@ -1,6 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
 
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 
 import AboutUs from '@/components/about-us'
 import { ChatBot } from '@/components/chatbot'
@@ -8,6 +8,7 @@ import { Hero } from '@/components/hero'
 import { InfiniteMovingCardsComponent } from '@/components/infinite-moving-cards-component'
 import { OtherServices } from '@/components/other-services'
 import ScrollReveal from '@/components/scroll-reveal'
+import ex from '@/public/placeholder.svg'
 
 const Testimonials = dynamic(() =>
   import('@/components/testimonials').then((mod) => mod.Testimonials),
@@ -24,6 +25,21 @@ export default function Home() {
     <>
       <Hero />
       <InfiniteMovingCardsComponent />
+      {/* <section id="services" className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container mx-auto px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <div className="flex h-[430px] w-[600px]">
+            <Image
+              src={ex}
+              alt="test"
+              className="hover:filter-contrast-120 w-0 flex-grow object-cover opacity-80 transition-opacity hover:w-[300px] hover:cursor-crosshair hover:opacity-100"
+            />
+        </div>
+         
+
+          </div>
+        </div>
+      </section> */}
       <AboutUs />
       <OtherServices />
       <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
@@ -32,6 +48,7 @@ export default function Home() {
       <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
         <ContactUs />
       </ScrollReveal>
+
       <ChatBot />
       {/* 
 

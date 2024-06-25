@@ -19,17 +19,20 @@ const AboutUs = () => {
             Contando a nossa história
           </h2>
           <p className="mt-8 max-w-2xl text-base dark:text-neutral-200 md:text-xl">
-            En One Films, nos dedicamos a elevar la calidad y la narrativa de
-            nuestras producciones audiovisuales. Entendemos que el público
-            actual busca empresas que se conecten auténticamente con ellos,
-            comprendiendo sus necesidades y problemas para ofrecer soluciones
-            efectivas.
+            Somos <strong>Lucas</strong> e <strong>Diego</strong>, fundadores da <strong>OneFilms</strong>.
+            Com anos de experiência em audiovisual e
+            vendas, acreditamos firmemente que a <strong>qualidade
+              da imagem</strong> e um <strong>storytelling</strong> bem elaborado são
+            essenciais para fazer a diferença nas redes sociais
+            e gerar <strong>grandes resultados</strong>.
           </p>
           <p className="mt-8 max-w-2xl text-base dark:text-neutral-200 md:text-xl">
-            En One Films, producimos contenido que no solo se enfoca en el
-            producto, sino en el impacto y el valor que puede generar para
-            nuestros clientes y su público objetivo. Utilizamos técnicas que
-            apelan a las emociones, creando confianza y seguridad en su empresa.
+            Na <strong>One Films</strong>, utilizamos equipamentos de altíssima qualidade para gerar conteúdo que não só se foca no produto, mas também no impacto e no valor que pode gerar para nossos clientes e <strong>seu público-alvo</strong>.
+          </p>
+          <p className="mt-8 max-w-2xl text-base dark:text-neutral-200 md:text-xl">
+            Utilizamos técnicas que apelam às emoções, criando confiança e segurança em sua empresa. A {' '} 
+            <strong>OneFilms</strong> é a escolha certa para você. Junte-se a
+            nós e transforme sua visão em realidade!
           </p>
         </div>
       </HeroParallax>
