@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import AboutUs from '@/components/about-us'
 import { Hero } from '@/components/hero'
 import { InfiniteMovingCardsComponent } from '@/components/infinite-moving-cards-component'
 
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <InfiniteMovingCardsComponent />
+      <AboutUs />
 
       {/* 
       <AboutUs />

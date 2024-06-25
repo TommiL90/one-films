@@ -1,6 +1,9 @@
+import dynamic from 'next/dynamic'
 import React from 'react'
 
-import { HeroParallax } from './ui/hero-parallax'
+const HeroParallax = dynamic(() =>
+  import('@/components/ui/hero-parallax').then((mod) => mod.HeroParallax),
+)
 
 const AboutUs = () => {
   return (
