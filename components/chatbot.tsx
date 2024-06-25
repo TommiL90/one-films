@@ -158,7 +158,17 @@ const steps = [
   },
 ]
 
-export const ChatBot = () => {
+const PrimitiveChatBot = dynamic(
+  async () => {
+    const Chatbot = await import('react-simple-chatbot')
+    return Chatbot
+  },
+  {
+    ssr: false,
+  },
+)
+
+const CustomChatBot = () => {
   const [width] = useState(window.innerWidth)
   return (
     <PrimitiveChatBot
@@ -175,9 +185,9 @@ export const ChatBot = () => {
   )
 }
 
-const PrimitiveChatBot = dynamic(
+export const ChatBot = dynamic(
   async () => {
-    const Chatbot = await import('react-simple-chatbot')
+    const Chatbot = CustomChatBot
     return Chatbot
   },
   {
