@@ -1,17 +1,30 @@
-'use client'
-
+import dynamic from 'next/dynamic'
 import React from 'react'
 
-import { InfiniteMovingCards } from './ui/infinite-moving-cards'
+import Loading from '@/app/loading'
+
+import ScrollReveal from './scroll-reveal'
+
+const InfiniteMovingCards = dynamic(
+  () =>
+    import('@/components/ui/infinite-moving-cards').then(
+      (mod) => mod.InfiniteMovingCards,
+    ),
+  {
+    loading: () => <Loading />,
+  },
+)
 
 export function InfiniteMovingCardsComponent() {
   return (
     <div className="dark:bg-grid-white/[0.05] relative flex h-[40rem] flex-col items-center justify-center overflow-hidden rounded-md antialiased">
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
+      <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+      </ScrollReveal>
     </div>
   )
 }
