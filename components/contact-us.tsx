@@ -1,9 +1,6 @@
 'use client'
 import React from 'react'
 
-import { cn } from '@/lib/utils'
-
-import { Form } from './form'
 import { Boxes } from './ui/background-boxes'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
@@ -26,7 +23,7 @@ export function ContactUs() {
             </h2>
             <p className="relative z-20 mt-2 max-w-[900px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Ready to take your business to new heights? Contact us today, and
-              let's discuss how we can help you achieve your marketing goals in
+              lets discuss how we can help you achieve your marketing goals in
               Ubatuba.
             </p>
           </div>
