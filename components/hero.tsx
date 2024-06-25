@@ -4,10 +4,10 @@ import { ImagesSlider } from './ui/images-slider'
 
 export function Hero() {
   const images = [
-    '/images/hero/1.webp',
-    '/images/hero/2.webp',
-    '/images/hero/3.webp',
-    '/images/hero/4.webp',
+    '/assets/images/hero/1.webp',
+    '/assets/images/hero/2.webp',
+    '/assets/images/hero/3.webp',
+    '/assets/images/hero/4.webp',
   ]
   return (
     <ImagesSlider className="h-screen" images={images}>
