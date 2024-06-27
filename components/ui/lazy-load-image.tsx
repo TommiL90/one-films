@@ -10,7 +10,7 @@ type PropType = {
   imgSrc: string
   alt: string
   inView: boolean
-  index: number
+  index?: number
   fill?: boolean
   width?: number
   height?: number

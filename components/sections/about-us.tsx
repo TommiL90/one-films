@@ -4,6 +4,7 @@ import React from 'react'
 
 import ScrollReveal from '../scroll-reveal'
 import { AspectRatio } from '../ui/aspect-ratio'
+import { LazyLoadImage } from '../ui/lazy-load-image'
 
 // const HeroParallax = dynamic(() =>
 //   import('@/components/ui/hero-parallax').then((mod) => mod.HeroParallax),
@@ -50,14 +51,13 @@ export const AboutUs = () => {
                   em realidade!
                 </p>
               </section>
-              <AspectRatio ratio={4 / 5} className="py-8">
-                <Image
-                  src="/assets/images/hero/1.webp"
-                  alt="Photo by Drew Beamer"
-                  fill
-                  className="rounded-md object-cover"
-                />
-              </AspectRatio>
+              <LazyLoadImage
+                imgSrc="/placeholder.svg"
+                width={550}
+                height={310}
+                alt="nos"
+                inView={true}
+              />
             </div>
           </div>
         </ScrollReveal>
