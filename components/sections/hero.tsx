@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ImagesSlider } from './ui/images-slider'
+import { ImagesSlider } from '../ui/images-slider'
 
 export function Hero() {
   const images = [

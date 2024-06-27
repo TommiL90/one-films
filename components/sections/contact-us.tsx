@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
 
-import { Boxes } from './ui/background-boxes'
-import { Button } from './ui/button'
-import { Input } from './ui/input'
-import { Textarea } from './ui/textarea'
+import { Boxes } from '../ui/background-boxes'
+import { Button } from '../ui/button'
+import { Input } from '../ui/input'
+import { Textarea } from '../ui/textarea'
 
 export function ContactUs() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {

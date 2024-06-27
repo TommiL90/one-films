@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 
-import ScrollReveal from './scroll-reveal'
+import ScrollReveal from '../scroll-reveal'
 
 const ImageCarousel = dynamic(() =>
   import('@/components/image-carousel').then((mod) => mod.ImageCarousel),

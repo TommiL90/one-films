@@ -3,7 +3,7 @@ import React from 'react'
 
 import Loading from '@/app/loading'
 
-import ScrollReveal from './scroll-reveal'
+import ScrollReveal from '../scroll-reveal'
 
 const InfiniteMovingCards = dynamic(
   () =>

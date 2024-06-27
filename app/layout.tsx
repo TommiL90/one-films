@@ -1,9 +1,14 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import { TailwindIndicator } from '@/components/indicator'
+import { SiteHeader } from '@/components/site-header'
+import { fontSans } from '@/config/fonts'
+import { cn } from '@/lib/utils'
+
+import { Providers } from './providers'
+import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +22,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cn(
+          'min-h-screen bg-background font-sans antialiased',
+          fontSans.variable,
+        )}
+      >
+        <Providers attribute="class" defaultTheme="dark">
+          <div className="relative flex min-h-screen flex-col">
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+          <TailwindIndicator />
+        </Providers>
+      </body>
     </html>
   )
 }
