@@ -9,6 +9,7 @@ import { InfiniteMovingCardsComponent } from '@/components/infinite-moving-cards
 import { OtherServices } from '@/components/other-services'
 import ScrollReveal from '@/components/scroll-reveal'
 import ex from '@/public/placeholder.svg'
+import { Services } from '@/components/services'
 
 const Testimonials = dynamic(() =>
   import('@/components/testimonials').then((mod) => mod.Testimonials),
@@ -41,6 +42,7 @@ export default function Home() {
         </div>
       </section> */}
       <AboutUs />
+      <Services />
       <OtherServices />
       <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
         <Testimonials />
