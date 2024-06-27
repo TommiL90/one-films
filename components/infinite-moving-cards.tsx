@@ -5,17 +5,10 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 
-import { AspectRatio } from './aspect-ratio'
+import { title } from './primitives'
+import { AspectRatio } from './ui/aspect-ratio'
 
 export const InfiniteMovingCards = ({
   items,
@@ -131,15 +124,15 @@ export const InfiniteMovingCards = ({
               aria-hidden="true"
               className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
             ></div>
-            <CardHeader className="px-4">
-              <CardTitle className="text-lg font-semibold">
+            <div className="mt-4 px-4 py-2">
+              <h3 className={cn(title({ size: 'sm' }), 'font-semibold')}>
                 {' '}
                 {item.title}
-              </CardTitle>
-              <CardDescription className="z-20 text-sm font-normal leading-[1.6]">
+              </h3>
+              <p className="z-20 text-sm font-normal leading-[1.6]">
                 {item.quote}
-              </CardDescription>
-            </CardHeader>
+              </p>
+            </div>
           </li>
         ))}
       </ul>
