@@ -1,5 +1,9 @@
 import React from 'react'
 
+import { cn } from '@/lib/utils'
+
+import { subtitle, title } from '../primitives'
+import { buttonVariants } from '../ui/button'
 import { ImagesSlider } from '../ui/images-slider'
 
 export function Hero() {
@@ -12,11 +16,16 @@ export function Hero() {
   return (
     <ImagesSlider className="h-screen" images={images}>
       <div className="z-50 flex h-screen flex-col items-center justify-center transition-all">
-        <h1 className="animate-fadeInDown bg-gradient-to-b from-primary to-zinc-500 bg-clip-text py-4 text-center text-xl font-bold text-transparent md:text-6xl">
+        <h1
+          className={cn(
+            title({ size: 'lg', color: 'foreground' }),
+            'animate-fadeInDown',
+          )}
+        >
           Eleve sua Marca com a Agência Audiovisual
           <br /> One Films
         </h1>
-        <p className="max-w-[600px] animate-fade text-muted-foreground md:text-xl">
+        <p className={cn(subtitle(), 'leading-normal')}>
           Desbloqueie o poder da criação de conteúdo e do marketing digital para
           fazer seu negócio crescer em Ubatuba e região.
         </p>
