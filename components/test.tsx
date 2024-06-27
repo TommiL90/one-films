@@ -1,6 +1,6 @@
 'use client'
 
-import Loading from '@/app/loading'
+
 
 const Test = () => {
   return (

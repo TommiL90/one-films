@@ -1,8 +1,8 @@
 import dynamic from 'next/dynamic'
 
-import ScrollReveal from './scroll-reveal'
-import { AnimatedCard } from './ui/animated-card'
+import { AnimatedCard } from '../tem/components/ui/animated-card'
 import { LayoutGridDemo } from './damo'
+import ScrollReveal from './scroll-reveal'
 
 const ImageCarousel = dynamic(() =>
   import('@/components/image-carousel').then((mod) => mod.ImageCarousel),
@@ -23,12 +23,16 @@ export const Services = () => {
               Essas são as nossas atuações:
             </h2>
             <p className="max-w-[900px] text-slate-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Na <strong>OneFilms</strong>, criamos serviços <strong>personalizados</strong> que atendem às necessidades <strong>únicas</strong> da sua marca. Especializados em produções audiovisuais de alta qualidade, ajudamos sua marca a se destacar no mercado digital.
+              Na <strong>OneFilms</strong>, criamos serviços{' '}
+              <strong>personalizados</strong> que atendem às necessidades{' '}
+              <strong>únicas</strong> da sua marca. Especializados em produções
+              audiovisuais de alta qualidade, ajudamos sua marca a se destacar
+              no mercado digital.
             </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-center bg-destructive">
-          <LayoutGridDemo/>
+          <LayoutGridDemo />
 
           {/* <div className="flex flex-col justify-center space-y-4">
             <ul className="grid gap-6">
