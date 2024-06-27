@@ -3,7 +3,6 @@ import React from 'react'
 import { cn } from '@/lib/utils'
 
 import { subtitle, title } from '../primitives'
-import { buttonVariants } from '../ui/button'
 import { ImagesSlider } from '../ui/images-slider'
 
 export function Hero() {
