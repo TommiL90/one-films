@@ -5,6 +5,7 @@ import { InfiniteMovingCardsComponent } from '@/components/sections/infinite-mov
 import { OtherServices } from '@/components/sections/other-services'
 import { OurServices } from '@/components/sections/our-services'
 import { Portfolio } from '@/components/sections/portfolio'
+import { Testimonials } from '@/components/sections/testimonials'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <OurServices />
       <Portfolio />
       <OtherServices />
+      <Testimonials />
       <ContactUs />
     </>
   )

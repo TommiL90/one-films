@@ -8,7 +8,7 @@ import { fontSans } from '@/config/fonts'
 import { cn } from '@/lib/utils'
 
 import { Providers } from './providers'
-import Footer from '@/components/footer'
+import { Footer } from '@/components/sections/footer'
 
 export const metadata: Metadata = {
   title: 'Create Next App',

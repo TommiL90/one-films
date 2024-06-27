@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-import { Icon } from './icons'
+import { Icon } from '../icons'
 
 export const Testimonials = () => {
   return (
