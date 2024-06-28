@@ -3,12 +3,12 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 import { TailwindIndicator } from '@/components/indicator'
+import { Footer } from '@/components/sections/footer'
 import { SiteHeader } from '@/components/site-header'
 import { fontSans } from '@/config/fonts'
 import { cn } from '@/lib/utils'
 
 import { Providers } from './providers'
-import { Footer } from '@/components/sections/footer'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
