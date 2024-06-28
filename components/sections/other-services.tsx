@@ -1,13 +1,15 @@
 // import dynamic from 'next/dynamic'
 
+import dynamic from 'next/dynamic'
+
 import { cn } from '@/lib/utils'
 
 import { subtitle, title } from '../primitives'
 import ScrollReveal from '../scroll-reveal'
 
-// const ImageCarousel = dynamic(() =>
-//   import('@/components/image-carousel').then((mod) => mod.ImageCarousel),
-// )
+const ImageCarousel = dynamic(() =>
+  import('@/components/image-carousel').then((mod) => mod.ImageCarousel),
+)
 
 export const OtherServices = () => {
   return (
@@ -38,7 +40,7 @@ export const OtherServices = () => {
             </p>
           </div>
           <div className="mx-auto grid max-w-6xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-            {/* <ImageCarousel /> */}
+            <ImageCarousel />
             <div className="flex flex-col justify-center space-y-4">
               <ul className="grid gap-6">
                 <li>
