@@ -18,7 +18,7 @@ export const OurServices = () => {
   return (
     <div className="w-full py-8 md:py-16 lg:py-24">
       <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="relative mx-auto inline-block rounded-lg border border-emerald-500/20 bg-emerald-300/10 px-3 py-1 text-sm text-white">
@@ -42,8 +42,8 @@ export const OurServices = () => {
               no mercado digital.
             </p>
           </div>
-          <div className="h-[800px] w-full py-4">
-            <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-4 p-10 md:grid-cols-3">
+          <div className="mx-auto flex h-[800px] max-w-6xl items-center py-4">
+            <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-4 p-4 md:grid-cols-3">
               {skeletonCards.map((card, i) => (
                 <div key={i} className={cn(card.className, '')}>
                   <div

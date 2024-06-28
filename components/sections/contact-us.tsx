@@ -1,6 +1,9 @@
 'use client'
 import React from 'react'
 
+import { cn } from '@/lib/utils'
+
+import { subtitle, title } from '../primitives'
 import { Boxes } from '../ui/background-boxes'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
@@ -17,16 +20,22 @@ export function ContactUs() {
       <div className="container px-4 md:px-6">
         <Boxes />
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="relative space-y-2">
-            <h2 className="relative z-20 text-3xl font-bold tracking-tighter text-white sm:text-5xl">
-              Entre em Contato
-            </h2>
-            <p className="relative z-20 mt-2 max-w-[900px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Pronto para levar o seu negócio a novos patamares? Entre em
-              contato conosco hoje e vamos discutir como podemos ajudá-lo a
-              alcançar seus objetivos de marketing em Ubatuba.
-            </p>
-          </div>
+          <div className="relative space-y-2"></div>
+          <h2 className={cn(title({ size: 'md' }), 'relative z-20')}>
+            {' '}
+            Entre em Contato
+          </h2>
+
+          <p
+            className={cn(
+              subtitle(),
+              'relative z-20 max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed',
+            )}
+          >
+            Pronto para levar o seu negócio a novos patamares? Entre em contato
+            conosco hoje e vamos discutir como podemos ajudá-lo a alcançar seus
+            objetivos de marketing em Ubatuba
+          </p>
           <div className="relative z-30 mx-auto w-full max-w-sm space-y-2">
             <form className="my-8 flex flex-col gap-4" onSubmit={handleSubmit}>
               <Input

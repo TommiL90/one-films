@@ -1,5 +1,8 @@
 import dynamic from 'next/dynamic'
 
+import { cn } from '@/lib/utils'
+
+import { subtitle, title } from '../primitives'
 import ScrollReveal from '../scroll-reveal'
 
 const ImageCarousel = dynamic(() =>
@@ -17,26 +20,38 @@ export const OtherServices = () => {
                 <span> Outros Serviços</span>
                 <div className="absolute inset-x-0 -bottom-px mx-auto h-px w-3/4 bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Parcerias Estratégicas:
-              </h2>
-              <p className="max-w-[900px] text-slate-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Além de nossos serviços audiovisuais, colaboramos com parceiros
-                especializados em tráfego, sites e gestão de redes sociais para
-                maximizar sua presença online..
-              </p>
             </div>
+            <h2 className={cn(title({ size: 'md' }))}>
+              {' '}
+              Parcerias Estratégicas:
+            </h2>
+
+            <p
+              className={cn(
+                subtitle(),
+                'max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed',
+              )}
+            >
+              Além de nossos serviços audiovisuais, colaboramos com parceiros
+              especializados em tráfego, sites e gestão de redes sociais para
+              maximizar sua presença online.
+            </p>
           </div>
-          <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+          <div className="mx-auto grid max-w-6xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
             <ImageCarousel />
             <div className="flex flex-col justify-center space-y-4">
               <ul className="grid gap-6">
                 <li>
                   <div className="grid gap-1">
-                    <h3 className="text-xl font-bold text-emerald-600">
+                    <h3
+                      className={cn(
+                        title({ size: 'sm', color: 'green' }),
+                        'text-left',
+                      )}
+                    >
                       Tráfego e marketing digital
                     </h3>
-                    <p className="text-accent-foreground">
+                    <p className="font-medium text-accent-foreground">
                       Engaje seus clientes com nossas campanhas personalizadas
                       nas redes sociais.
                     </p>
@@ -44,10 +59,15 @@ export const OtherServices = () => {
                 </li>
                 <li>
                   <div className="grid gap-1">
-                    <h3 className="text-xl font-bold text-emerald-600">
+                    <h3
+                      className={cn(
+                        title({ size: 'sm', color: 'green' }),
+                        'text-left',
+                      )}
+                    >
                       Desenvolvimento Web
                     </h3>
-                    <p className="text-accent-foreground">
+                    <p className="font-medium text-accent-foreground">
                       Exiba sua marca com um site visualmente deslumbrante e
                       fácil de usar. Desde Landing Pages até E-commerces.
                     </p>

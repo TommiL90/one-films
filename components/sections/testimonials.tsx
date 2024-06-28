@@ -3,7 +3,10 @@
 import Image from 'next/image'
 import React from 'react'
 
+import { cn } from '@/lib/utils'
+
 import { Icon } from '../icons'
+import { subtitle, title } from '../primitives'
 import ScrollReveal from '../scroll-reveal'
 
 export const Testimonials = () => {
@@ -17,19 +20,26 @@ export const Testimonials = () => {
                 <span> Depoimentos </span>
                 <div className="absolute inset-x-0 -bottom-px mx-auto h-px w-3/4 bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                O Que Nossos Clientes Dizem
-              </h2>
-              <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Ouça os depoimentos das empresas que ajudamos a crescer suas
-                marcas e alcançar novos clientes em Ubatuba.
-              </p>
             </div>
+            <h2 className={cn(title({ size: 'md' }))}>
+              {' '}
+              O Que Nossos Clientes Dizem:
+            </h2>
+
+            <p
+              className={cn(
+                subtitle(),
+                'max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed',
+              )}
+            >
+              Ouça os depoimentos das empresas que ajudamos a crescer suas
+              marcas e alcançar novos clientes em Ubatuba.
+            </p>
           </div>
-          <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+          <div className="mx-auto grid max-w-6xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
             <div className="flex flex-col justify-center space-y-4">
               <blockquote className="grid gap-1">
-                <div className="text-2xl font-bold text-emerald-600">
+                <div className="text-xl font-bold text-emerald-600">
                   "A Agência de Marketing Ubatuba foi um divisor de águas para o
                   nosso negócio."
                 </div>
@@ -38,7 +48,7 @@ export const Testimonials = () => {
                 </footer>
               </blockquote>
               <blockquote className="grid gap-1">
-                <div className="text-2xl font-bold text-emerald-600">
+                <div className="text-xl font-bold text-emerald-600">
                   "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Explicabo, reprehenderit quas!."
                 </div>
