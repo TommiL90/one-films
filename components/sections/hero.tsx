@@ -2,7 +2,7 @@ import React from 'react'
 
 import { cn } from '@/lib/utils'
 
-import { subtitle, title } from '../primitives'
+import { title } from '../primitives'
 import { ImagesSlider } from '../ui/images-slider'
 
 export function Hero() {
