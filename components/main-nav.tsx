@@ -15,7 +15,7 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="relative flex w-full justify-between gap-6 md:gap-10">
       <div className="flex items-center">
-        <OneFilms className="absolute inset-0 z-50" />
+        <OneFilms className="glitch absolute inset-0 z-50" />
         <span className="sr-only">{siteConfig.name}</span>
       </div>
       {items?.length ? (
