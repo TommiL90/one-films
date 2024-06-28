@@ -1,11 +1,43 @@
-// import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic'
 
-// import Loading from '@/app/loading'
+import Loading from '@/app/loading'
 import { cn } from '@/lib/utils'
+import { SkeletonCard } from '@/types/skeleton-card'
 
 import { subtitle, title } from '../primitives'
 import ScrollReveal from '../scroll-reveal'
-// import { skeletonCards } from '../skeletons-services'
+
+const SkeletonOne = dynamic(
+  () =>
+    import('@/components/skeletons-services').then((mod) => mod.SkeletonOne),
+  {
+    loading: () => <Loading />,
+  },
+)
+
+const SkeletonTwo = dynamic(
+  () =>
+    import('@/components/skeletons-services').then((mod) => mod.SkeletonTwo),
+  {
+    loading: () => <Loading />,
+  },
+)
+
+const SkeletonThree = dynamic(
+  () =>
+    import('@/components/skeletons-services').then((mod) => mod.SkeletonThree),
+  {
+    loading: () => <Loading />,
+  },
+)
+
+const SkeletonFour = dynamic(
+  () =>
+    import('@/components/skeletons-services').then((mod) => mod.SkeletonFour),
+  {
+    loading: () => <Loading />,
+  },
+)
 
 // const BlurImage = dynamic(
 //   () => import('@/components/blur-image').then((mod) => mod.BlurImage),
@@ -43,7 +75,7 @@ export const OurServices = () => {
             </p>
           </div>
           <div className="mx-auto flex h-[800px] max-w-6xl items-center py-4">
-            {/* <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-4 p-4 md:grid-cols-3">
+            <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-4 p-4 md:grid-cols-3">
               {skeletonCards.map((card, i) => (
                 <div key={i} className={cn(card.className, '')}>
                   <div
@@ -55,14 +87,45 @@ export const OurServices = () => {
                     <div className="relative z-30 ml-4 flex min-h-full items-end bg-transparent">
                       {card.content}
                     </div>
-                    <BlurImage src={card.thumbnail} />
+                    {/* <BlurImage src={card.thumbnail} /> */}
                   </div>
                 </div>
               ))}
-            </div> */}
+            </div>
           </div>
         </div>
       </ScrollReveal>
     </div>
   )
 }
+
+const skeletonCards: SkeletonCard[] = [
+  {
+    id: 1,
+    content: <SkeletonOne />,
+    className: 'md:col-span-2',
+    thumbnail:
+      'https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    id: 2,
+    content: <SkeletonTwo />,
+    className: 'col-span-1',
+    thumbnail:
+      'https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    id: 3,
+    content: <SkeletonThree />,
+    className: 'col-span-1',
+    thumbnail:
+      'https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    id: 4,
+    content: <SkeletonFour />,
+    className: 'md:col-span-2',
+    thumbnail:
+      'https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+]
