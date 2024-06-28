@@ -1,18 +1,18 @@
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 
-import Loading from '@/app/loading'
+// import Loading from '@/app/loading'
 import { cn } from '@/lib/utils'
 
 import { subtitle, title } from '../primitives'
 import ScrollReveal from '../scroll-reveal'
-import { skeletonCards } from '../skeletons-services'
+// import { skeletonCards } from '../skeletons-services'
 
-const BlurImage = dynamic(
-  () => import('@/components/blur-image').then((mod) => mod.BlurImage),
-  {
-    loading: () => <Loading />,
-  },
-)
+// const BlurImage = dynamic(
+//   () => import('@/components/blur-image').then((mod) => mod.BlurImage),
+//   {
+//     loading: () => <Loading />,
+//   },
+// )
 
 export const OurServices = () => {
   return (
@@ -43,7 +43,7 @@ export const OurServices = () => {
             </p>
           </div>
           <div className="mx-auto flex h-[800px] max-w-6xl items-center py-4">
-            <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-4 p-4 md:grid-cols-3">
+            {/* <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-4 p-4 md:grid-cols-3">
               {skeletonCards.map((card, i) => (
                 <div key={i} className={cn(card.className, '')}>
                   <div
@@ -59,7 +59,7 @@ export const OurServices = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </ScrollReveal>
