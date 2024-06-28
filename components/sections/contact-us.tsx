@@ -20,7 +20,7 @@ export function ContactUs() {
   // }
   return (
     <section className="relative flex h-full w-full animate-fade flex-col items-center justify-center overflow-hidden py-8 md:py-16 lg:py-24">
-      <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-background [mask-image:radial-gradient(transparent,white)]" />
+      <div className="pointer-events-none absolute inset-0 z-20 hidden h-full w-full bg-background [mask-image:radial-gradient(transparent,white)] md:block" />
       <div className="container px-4 md:px-6">
         {/* <Boxes /> */}
         <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
