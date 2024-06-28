@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import React from 'react'
 
 import { cn } from '@/lib/utils'
@@ -9,9 +9,9 @@ import { Button } from '../ui/button'
 import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 
-const Boxes = dynamic(() =>
-  import('../ui/background-boxes').then((mod) => mod.Boxes),
-)
+// const Boxes = dynamic(() =>
+//   import('../ui/background-boxes').then((mod) => mod.Boxes),
+// )
 
 export function ContactUs() {
   // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -22,7 +22,7 @@ export function ContactUs() {
     <section className="relative flex h-full w-full animate-fade flex-col items-center justify-center overflow-hidden py-8 md:py-16 lg:py-24">
       <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-background [mask-image:radial-gradient(transparent,white)]" />
       <div className="container px-4 md:px-6">
-        <Boxes />
+        {/* <Boxes /> */}
         <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="relative space-y-2"></div>
