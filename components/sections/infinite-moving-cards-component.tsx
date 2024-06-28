@@ -18,7 +18,7 @@ const InfiniteMovingCards = dynamic(
 export function InfiniteMovingCardsComponent() {
   return (
     <section>
-      <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
+      <ScrollReveal y={-20} duration="600ms" threshold={0.75}>
         <div className="dark:bg-grid-white/[0.05] relative flex h-[40rem] flex-col items-center justify-center overflow-hidden rounded-md antialiased">
           <InfiniteMovingCards
             items={testimonials}

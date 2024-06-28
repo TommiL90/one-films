@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 
 export const title = cva(
-  'tracking-tight inline font-bold bg-clip-text py-4 text-center leading-relaxed',
+  'tracking-tighter inline font-bold bg-clip-text py-4 text-center leading-relaxed md:tracking-tight',
   {
     variants: {
       color: {
@@ -11,11 +11,11 @@ export const title = cva(
         cyan: 'from-[#00b7fa] to-[#01cfea]',
         green: 'from-[#6FEE8D] to-[#17c964]',
         pink: 'from-[#FF72E1] to-[#F54C7A]',
-        foreground: 'dark:from-[#FFFFFF] dark:to-[#4B4B4B]',
+        foreground: 'dark:from-[#d4d4d8] dark:to-[#ffffff]',
       },
       size: {
         sm: 'text-xl lg:text-2xl',
-        md: 'text-[2.3rem] lg:text-5xl leading-9',
+        md: 'text-3xl lg:text-5xl leading-9',
         lg: 'text-4xl lg:text-6xl',
       },
       fullWidth: {
@@ -44,7 +44,7 @@ export const title = cva(
 )
 
 export const subtitle = cva(
-  'max-w-[600px] md:w-1/2 my-2 text-lg md:text-xl text-zinc-300',
+  'max-w-[600px] md:w-1/2 my-2 text-lg font-semibold md:text-xl text-zinc-400',
   {
     variants: {
       fullWidth: {
