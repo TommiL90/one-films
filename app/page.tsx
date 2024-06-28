@@ -1,4 +1,5 @@
 import { AboutUs } from '@/components/sections/about-us'
+import { ContactUs } from '@/components/sections/contact-us'
 import { Hero } from '@/components/sections/hero'
 import { InfiniteMovingCardsComponent } from '@/components/sections/infinite-moving-cards-component'
 import { OtherServices } from '@/components/sections/other-services'
@@ -14,11 +15,7 @@ export default function Home() {
       <OurServices />
       <OtherServices />
       <Testimonials />
-
-      {/* 
-      <OtherServices />
-      <Testimonials />
-      <ContactUs /> */}
+      <ContactUs />
     </>
   )
 }
