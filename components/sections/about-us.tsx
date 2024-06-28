@@ -13,11 +13,8 @@ import { LazyLoadImage } from '../ui/lazy-load-image'
 export const AboutUs = () => {
   return (
     <>
-      <section
-        id="services"
-        className="w-full bg-destructive py-12 md:py-16 lg:py-24"
-      >
-        <ScrollReveal y={-20} duration="600ms" threshold={0.75}>
+      <section id="services" className="w-full py-12 md:py-16 lg:py-24">
+        <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">

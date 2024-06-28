@@ -9,29 +9,35 @@ import {
 } from '@tabler/icons-react'
 import React from 'react'
 
+import { cn } from '@/lib/utils'
+
+import { subtitle, title } from '../primitives'
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid'
 
 export function Portfolio() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full bg-destructive py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <div className="relative mx-auto inline-block rounded-lg border border-emerald-500/20 bg-emerald-300/10 px-3 py-1 text-sm text-white">
-              <span> Nosso Trabalho</span>
+              <span> Porfolio</span>
               <div className="absolute inset-x-0 -bottom-px mx-auto h-px w-3/4 bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
-              Essas são as nossas atuações:
-            </h2>
-            <p className="max-w-[900px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Na <strong>OneFilms</strong>, criamos serviços{' '}
-              <strong>personalizados</strong> que atendem às necessidades{' '}
-              <strong>únicas</strong> da sua marca. Especializados em produções
-              audiovisuais de alta qualidade, ajudamos sua marca a se destacar
-              no mercado digital.
-            </p>
           </div>
+          <h2 className={cn(title({ size: 'md' }))}>Nosso porfolio:</h2>
+          <p
+            className={cn(
+              subtitle(),
+              'max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed',
+            )}
+          >
+            Na <strong>OneFilms</strong>, criamos serviços{' '}
+            <strong>personalizados</strong> que atendem às necessidades{' '}
+            <strong>únicas</strong> da sua marca. Especializados em produções
+            audiovisuais de alta qualidade, ajudamos sua marca a se destacar no
+            mercado digital.
+          </p>
           <BentoGrid className="mx-auto w-full">
             {items.map((item, i) => (
               <BentoGridItem

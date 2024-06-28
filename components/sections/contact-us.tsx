@@ -12,7 +12,7 @@ export function ContactUs() {
     console.log('Form submitted')
   }
   return (
-    <section className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-12 md:py-24 lg:py-32">
+    <section className="relative flex h-full w-full animate-fade flex-col items-center justify-center overflow-hidden py-8 md:py-16 lg:py-24">
       <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-background [mask-image:radial-gradient(transparent,white)]" />
       <div className="container px-4 md:px-6">
         <Boxes />

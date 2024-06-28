@@ -30,8 +30,6 @@ export default function ScrollReveal({
           if (entries[0].isIntersecting) {
             setShow(true)
             setIntersecting(true)
-          } else {
-            setIntersecting(false)
           }
         },
         {
