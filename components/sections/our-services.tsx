@@ -39,12 +39,12 @@ const SkeletonFour = dynamic(
   },
 )
 
-// const BlurImage = dynamic(
-//   () => import('@/components/blur-image').then((mod) => mod.BlurImage),
-//   {
-//     loading: () => <Loading />,
-//   },
-// )
+const BlurImage = dynamic(
+  () => import('@/components/blur-image').then((mod) => mod.BlurImage),
+  {
+    loading: () => <Loading />,
+  },
+)
 
 export const OurServices = () => {
   return (
@@ -87,7 +87,7 @@ export const OurServices = () => {
                     <div className="relative z-30 ml-4 flex min-h-full items-end bg-transparent">
                       {card.content}
                     </div>
-                    {/* <BlurImage src={card.thumbnail} /> */}
+                    <BlurImage src={card.thumbnail} />
                   </div>
                 </div>
               ))}
