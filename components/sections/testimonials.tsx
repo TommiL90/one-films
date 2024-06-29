@@ -21,20 +21,23 @@ export const Testimonials = () => {
                 <div className="absolute inset-x-0 -bottom-px mx-auto h-px w-3/4 bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
               </div>
             </div>
+            <div>
+              <h2 className={cn(title({ size: 'md' }))}>
+                {' '}
+                O Que Nossos Clientes Dizem:
+              </h2>
+              <p
+                className={cn(
+                  subtitle(),
+                  'max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed',
+                )}
+              >
+                Ouça os depoimentos das empresas que ajudamos a crescer suas
+                marcas e alcançar novos clientes em Ubatuba.
+              </p>
+            </div>
           </div>
-          <h2 className={cn(title({ size: 'md' }))}>
-            {' '}
-            O Que Nossos Clientes Dizem:
-          </h2>
-          <p
-            className={cn(
-              subtitle(),
-              'max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed',
-            )}
-          >
-            Ouça os depoimentos das empresas que ajudamos a crescer suas marcas
-            e alcançar novos clientes em Ubatuba.
-          </p>
+
           <div className="mx-auto grid max-w-6xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
             <div className="flex flex-col justify-center space-y-4">
               <blockquote className="grid gap-1">

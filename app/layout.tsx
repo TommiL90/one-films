@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { TailwindIndicator } from '@/components/indicator'
 import { Footer } from '@/components/sections/footer'
 import { SiteHeader } from '@/components/site-header'
+import { WhattsApp } from '@/components/whattsApp'
 import { fontSans } from '@/config/fonts'
 import { cn } from '@/lib/utils'
 
@@ -34,6 +35,7 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
+          <WhattsApp />
           <TailwindIndicator />
         </Providers>
       </body>

@@ -149,6 +149,14 @@ const config = {
             left: 'unset',
           },
         },
+        shimmer: {
+          from: {
+            backgroundPosition: '0 0',
+          },
+          to: {
+            backgroundPosition: '-200% 0',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -162,6 +170,7 @@ const config = {
         load: 'load .5s ease-in-out infinite',
         fade: 'fade 1s forwards',
         fadeInDown: 'fadeInDown 0.6s forwards',
+        shimmer: 'shimmer 2s linear infinite',
       },
       boxShadow: {
         input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
