@@ -1,13 +1,25 @@
 export const siteConfig = {
   name: 'One Films Ubatuba - Produções Audiovisuais',
   description:
-    'Produções audiovisuais totalmente personalizados, projetados para atender suas necessidades, criar engajamento e vender.',
+    'Produções audiovisuais totalmente personalizados, projetados para atingir seus objetivos',
   generator: 'Next.js',
   keywords: [
     'One Films Ubatuba',
     'Produções Audiovisuais',
     'produtora audiovisual',
     'Vídeos',
+    'Storytelling Persuasivo',
+    'Storytelling',
+    'Locução',
+    'Locução profissional',
+    'Locução para vídeos',
+    'Locução para vídeos institucionais',
+    'Vídeos Estratégicos para Redes Sociais',
+    'Vídeos Estratégicos',
+    'Vídeos para Redes Sociais',
+    'Vídeos para Instagram',
+    'Vídeos para Facebook',
+    'Vídeos para YouTube',
     'Marketing',
     'Marketing digital',
     'Marketing de conteúdo',
@@ -37,6 +49,7 @@ export const siteConfig = {
     'Vídeos de serviços',
     'Vídeos de lançamentos',
   ],
+  category: 'Marketing',
   mainNav: [
     {
       title: 'Quem somos',
