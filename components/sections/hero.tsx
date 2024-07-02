@@ -15,7 +15,7 @@ export function Hero() {
   ]
   return (
     <ImagesSlider className="h-screen" images={images}>
-      <div className="z-50 flex h-screen flex-col items-center justify-center transition-all">
+      <div className="z-50 mx-auto flex h-screen flex-col items-center justify-center px-4 transition-all">
         <h1
           className={cn(
             title({ size: 'lg', color: 'foreground' }),
@@ -25,7 +25,7 @@ export function Hero() {
           Eleve sua Marca com a Agência Audiovisual
           <br /> One Films
         </h1>
-        <p className={cn(subtitle(), 'leading-normal')}>
+        <p className={cn(subtitle(), 'mb-6 text-center leading-relaxed')}>
           Desbloqueie o poder da criação de conteúdo e do marketing digital para
           fazer seu negócio crescer em Ubatuba e região.
         </p>

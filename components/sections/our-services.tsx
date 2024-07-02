@@ -67,11 +67,10 @@ export const OurServices = () => {
                 'max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed',
               )}
             >
-              Na <strong>OneFilms</strong>, criamos serviços{' '}
-              <strong>personalizados</strong> que atendem às necessidades{' '}
-              <strong>únicas</strong> da sua marca. Especializados em produções
-              audiovisuais de alta qualidade, ajudamos sua marca a se destacar
-              no mercado digital.
+              Na <strong>OneFilms</strong>, oferecemos serviços{' '}
+              <strong>personalizados</strong> em produções audiovisuais de alta
+              qualidade, entregando resultados <strong>impactantes</strong> e{' '}
+              <strong>memoráveis</strong> para a <strong>sua marca</strong>.
             </p>
           </div>
           <div className="mx-auto flex h-[800px] max-w-6xl items-center py-4">
