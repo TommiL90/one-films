@@ -1,18 +1,19 @@
 export const siteConfig = {
-  name: 'Next.js + NextUI',
-  description: 'Make beautiful websites regardless of your design experience.',
+  name: 'One Films Ubatuba - Produções Audiovisuais',
+  description:
+    'Produções audiovisuais totalmente personalizados, projetados para atender suas necessidades, criar engajamento e vender.',
   mainNav: [
     {
-      title: 'Quem Somos',
-      href: '#about-us',
+      title: 'Quem somos',
+      href: '#quem-somos',
     },
     {
-      title: 'Serviços y portfólio',
-      href: '#services',
+      title: 'Serviços e portfólio',
+      href: '#serviços-e-portfólio',
     },
     {
       title: 'Contato',
-      href: '#contact',
+      href: '#contato',
     },
   ],
   links: {
