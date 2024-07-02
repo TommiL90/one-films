@@ -29,7 +29,7 @@ export const AboutUs = () => {
             </div>
             <div className="mx-auto grid max-w-6xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <section className="flex flex-col justify-center space-y-4">
-                <p className="mt-8 max-w-2xl text-base font-medium md:text-xl">
+                <p className="max-w-2xl text-base font-medium md:text-xl">
                   Somos <strong>Lucas</strong> e <strong>Diego</strong>,
                   fundadores da <strong>OneFilms</strong>. Com anos de
                   experiência em audiovisual e vendas, acreditamos firmemente
