@@ -2,6 +2,16 @@ export const siteConfig = {
   name: 'One Films Ubatuba - Produções Audiovisuais',
   description:
     'Produções audiovisuais totalmente personalizados, projetados para atender suas necessidades, criar engajamento e vender.',
+  generator: 'Next.js',
+  keywords: [
+    'One Films Ubatuba',
+    'Produções Audiovisuais',
+    'Vídeos',
+    'marketing',
+    'marketing digital',
+    'Ubatuba',
+    'São Paulo',
+  ],
   mainNav: [
     {
       title: 'Quem somos',
@@ -30,6 +40,10 @@ export const siteConfig = {
     state: 'SP',
     zip: '01234-567',
   },
+  authors: [
+    { name: 'Tomás Lillo' },
+    { name: 'Tomás', url: 'https://www.linkedin.com/in/tomasbenjamin/' },
+  ],
 }
 
 export type SiteConfig = typeof siteConfig

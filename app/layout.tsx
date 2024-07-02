@@ -34,15 +34,7 @@ export const metadata: Metadata = {
     shortcut: '/favicons/favicon-16x16.png',
     apple: '/favicons/apple-touch-icon.png',
   },
-  keywords: [
-    'One Films Ubatuba',
-    'Produções Audiovisuais',
-    'Vídeos',
-    'marketing',
-    'marketing digital',
-    'Ubatuba',
-    'São Paulo',
-  ],
+  keywords: siteConfig.keywords,
 }
 
 export default function RootLayout({
