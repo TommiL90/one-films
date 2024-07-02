@@ -27,7 +27,7 @@ export function ContactUs() {
   // }
   return (
     <section
-      id="contact"
+      id="contato"
       className="relative flex h-full w-full animate-fade flex-col items-center justify-center overflow-hidden py-8 md:py-16 lg:py-24"
     >
       {/* <div className="pointer-events-none absolute inset-0 z-20 hidden h-full w-full bg-background [mask-image:radial-gradient(transparent,white)] md:block" /> */}
