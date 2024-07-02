@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     apple: '/favicons/apple-touch-icon.png',
   },
   keywords: siteConfig.keywords,
+  robots: {
+    'max-image-preview': 'large',
+  },
 }
 
 export default function RootLayout({
