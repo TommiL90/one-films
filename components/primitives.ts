@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 
 export const title = cva(
-  'tracking-tighter inline font-bold bg-clip-text py-4 text-center leading-relaxed md:tracking-tight',
+  'font-heading tracking-tighter inline font-bold bg-clip-text py-4 text-center leading-relaxed md:tracking-tight',
   {
     variants: {
       color: {

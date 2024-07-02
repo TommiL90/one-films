@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 import { TailwindIndicator } from '@/components/indicator'
 import { Footer } from '@/components/sections/footer'
 import { SiteHeader } from '@/components/site-header'
-import { fontSans } from '@/config/fonts'
+import { fontBody, fontHeading } from '@/config/fonts'
 import { cn } from '@/lib/utils'
 
 import { Providers } from './providers'
@@ -24,8 +24,9 @@ export default function RootLayout({
     <html lang="pt-Br">
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased',
-          fontSans.variable,
+          'font-body min-h-screen bg-background antialiased',
+          fontHeading.variable,
+          fontBody.variable,
         )}
       >
         <Providers attribute="class" defaultTheme="dark">
