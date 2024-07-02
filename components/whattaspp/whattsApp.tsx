@@ -41,7 +41,7 @@ export const WhattsApp = () => {
   })
   return (
     <div ref={ref}>
-      <div className="fixed bottom-16 right-6 z-50 animate-mobileActive md:right-8">
+      <div className="fixed bottom-12 right-6 z-50 animate-mobileActive md:right-8">
         {intersecting ? (
           <>
             <BubbleMessages />
