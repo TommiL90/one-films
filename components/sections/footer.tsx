@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React from 'react'
 
 export const Footer = () => {
@@ -7,7 +6,7 @@ export const Footer = () => {
       <p className="text-xs text-muted-foreground">
         &copy; 2024 Ubatuba Marketing Agency. All rights reserved.
       </p>
-      <nav className="flex gap-4 sm:ml-auto sm:gap-6">
+      {/* <nav className="flex gap-4 sm:ml-auto sm:gap-6">
         <Link
           href="#"
           className="text-xs underline-offset-4 hover:underline"
@@ -22,7 +21,7 @@ export const Footer = () => {
         >
           Privacy
         </Link>
-      </nav>
+      </nav> */}
     </footer>
   )
 }

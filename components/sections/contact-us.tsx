@@ -9,6 +9,7 @@ import React from 'react'
 import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
 
+import { OneFilmsBrand } from '../one-fims-brand'
 import { subtitle, title } from '../primitives'
 import ScrollReveal from '../scroll-reveal'
 import { Button } from '../ui/button'
@@ -72,6 +73,7 @@ export function ContactUs() {
                 />
                 <Button
                   type="submit"
+                  size="lg"
                   className="group/btn relative block w-full self-end shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
                 >
                   Solicitar Contacto
@@ -96,6 +98,7 @@ export function ContactUs() {
                   <span className="ml-2">{`${siteConfig.address.street}, ${siteConfig.address.state}`}</span>
                 </p>
               </div>
+              <OneFilmsBrand />
             </div>
           </div>
         </ScrollReveal>
