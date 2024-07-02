@@ -9,7 +9,7 @@ import React from 'react'
 import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
 
-import { OneFilmsBrand } from '../one-fims-brand'
+import { OneFilmsBrand } from '../one-films-brand'
 import { subtitle, title } from '../primitives'
 import ScrollReveal from '../scroll-reveal'
 import { Button } from '../ui/button'

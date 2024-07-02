@@ -4,7 +4,7 @@ import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
 import { NavItem } from '@/types'
 
-import { OneFilmsBrand } from './one-fims-brand'
+import { OneFilmsBrand } from './one-films-brand'
 
 interface MainNavProps {
   items?: NavItem[]
