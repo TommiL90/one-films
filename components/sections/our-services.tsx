@@ -48,7 +48,7 @@ const BlurImage = dynamic(
 
 export const OurServices = () => {
   return (
-    <div className="w-full py-8 md:py-16 lg:py-24">
+    <div id="services" className="w-full py-8 md:py-16 lg:py-24">
       <ScrollReveal y={-20} duration="1000ms" threshold={0.75}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
