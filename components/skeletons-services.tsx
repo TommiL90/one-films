@@ -1,6 +1,6 @@
 export const SkeletonOne = () => {
   return (
-    <div>
+    <div className="mt-4">
       <h3 className="text-4xl font-bold text-white">
         Produção Audiovisual Premium
       </h3>
@@ -15,7 +15,7 @@ export const SkeletonOne = () => {
 
 export const SkeletonTwo = () => {
   return (
-    <div>
+    <div className="mt-4">
       <h3 className="text-4xl font-bold text-white">Storytelling Persuasivo</h3>
       <p className="text-base font-normal text-white"></p>
       <p className="my-4 max-w-lg text-base font-normal text-neutral-200">
@@ -26,7 +26,7 @@ export const SkeletonTwo = () => {
 }
 export const SkeletonThree = () => {
   return (
-    <div>
+    <div className="mt-4">
       <h3 className="text-4xl font-bold text-white">Locução de Qualidade</h3>
       <p className="text-base font-normal text-white"></p>
       <p className="my-4 max-w-lg text-base font-normal text-neutral-200">
@@ -38,7 +38,7 @@ export const SkeletonThree = () => {
 }
 export const SkeletonFour = () => {
   return (
-    <div>
+    <div className="mt-4">
       <h3 className="text-4xl font-bold text-white">
         Vídeos Estratégicos para Redes Sociais
       </h3>
