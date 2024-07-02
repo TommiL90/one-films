@@ -57,7 +57,7 @@ export const siteConfig = {
     },
     {
       title: 'Serviços e portfólio',
-      href: '#serviços-e-portfólio',
+      href: '#servicos-e-portfolio',
     },
     {
       title: 'Contato',
