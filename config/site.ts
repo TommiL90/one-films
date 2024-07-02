@@ -19,6 +19,16 @@ export const siteConfig = {
     instagram: 'https://github.com/nextui-org/nextui',
     whatsApp: 'https://twitter.com/getnextui',
   },
+  contact: {
+    phone: '+55 (11) 99999-9999',
+    whatssApp: '+55 (11) 99999-9999',
+  },
+  address: {
+    street: 'Rua da Alegria, 123',
+    city: 'São Paulo',
+    state: 'SP',
+    zip: '01234-567',
+  },
 }
 
 export type SiteConfig = typeof siteConfig

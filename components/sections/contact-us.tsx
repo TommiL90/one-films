@@ -1,6 +1,12 @@
 // import dynamic from 'next/dynamic'
+import {
+  IconBrandGoogleMaps,
+  IconBrandWhatsapp,
+  IconPhone,
+} from '@tabler/icons-react'
 import React from 'react'
 
+import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
 
 import { subtitle, title } from '../primitives'
@@ -66,12 +72,30 @@ export function ContactUs() {
                 />
                 <Button
                   type="submit"
-                  className="group/btn relative block self-end shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+                  className="group/btn relative block w-full self-end shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
                 >
-                  Submit
+                  Solicitar Contacto
                   <BottomGradient />
                 </Button>
               </form>
+            </div>
+            <div>
+              <div className="max-w-max space-y-2">
+                <p className="flex">
+                  <IconPhone />:{' '}
+                  <span className="ml-2">{siteConfig.contact.phone}</span>
+                </p>
+                <p className="flex">
+                  {' '}
+                  <IconBrandWhatsapp />:{' '}
+                  <span className="ml-2">{siteConfig.contact.whatssApp}</span>
+                </p>
+                <p className="flex">
+                  {' '}
+                  <IconBrandGoogleMaps />:{' '}
+                  <span className="ml-2">{`${siteConfig.address.street}, ${siteConfig.address.state}`}</span>
+                </p>
+              </div>
             </div>
           </div>
         </ScrollReveal>
